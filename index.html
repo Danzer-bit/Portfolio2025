@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-color: #1a1a1a;
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 15%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 60px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(153, 153, 153, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+  
+  .colonna {
+  float: left;
+  width: 12.5%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+  
+  h2 {
+  color: white;
+}
+  
+  .marginauto {
+    margin: 10px auto 20px;
+    display: block;
+}
+</style>
+<body>
+
+<h2 style="text-align:center">Portfolio di Alexandro Simone Meloni</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">Portfolio</div>
+    <img src="https://i.ibb.co/mJWvbnv/00.jpg"  class="marginauto" alt="centered image">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">Indice</div>
+    <img src="https://i.ibb.co/3RJ2RMv/00-Indice.jpg"  class="marginauto" alt="centered image">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">1 / 48</div>
+    <img src="https://i.ibb.co/MBSv7Wz/01.jpg"  class="marginauto" alt="centered image">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">2 / 48</div>
+    <img src="https://i.ibb.co/yhvnVFS/02.jpg"  class="marginauto" alt="centered image">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 48</div>
+    <img src="https://i.ibb.co/Qrv3dKq/03.jpg"  class="marginauto" alt="centered image">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 48</div>
+    <img src="https://i.ibb.co/KG0C9kJ/04.jpg"  class="marginauto" alt="centered image">
+  </div>
+  
+   <div class="mySlides">
+    <div class="numbertext">5 / 48</div>
+    <img src="https://i.ibb.co/809bPTB/05.jpg" class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">6 / 48</div>
+    <img src="https://i.ibb.co/1mGDd73/06.jpg"  class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">7 / 48</div>
+    <img src="https://i.ibb.co/nkBQXR7/07.jpg"  class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">8 / 48</div>
+    <img src="https://i.ibb.co/27T8jFb/08.jpg" class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">9 / 48</div>
+    <img src="https://i.ibb.co/93gLCMK/09.jpg" class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">10 / 48</div>
+    <img src="https://i.ibb.co/pntHRp5/10.jpg"  class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">11 / 48</div>
+    <img src="https://i.ibb.co/xC17Wy6/11.jpg"  class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">12 / 48</div>
+    <img src="https://i.ibb.co/NYbz1bR/12.jpg"  class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">13 / 48</div>
+    <img src="https://i.ibb.co/jRBL1pj/13.jpg"  class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">14 / 48</div>
+    <img src="https://i.ibb.co/3YWcX71/14.jpg"  class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">15 / 48</div>
+    <img src="https://i.ibb.co/1sfzBsm/15.jpg"  class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">16 / 48</div>
+    <img src="https://i.ibb.co/Fx7CpH4/16.jpg" class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">17 / 48</div>
+    <img src="https://i.ibb.co/LZcKrN4/17.jpg" class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">18 / 48</div>
+    <img src="https://i.ibb.co/R9Y8fvw/18.jpg" class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">19 / 48</div>
+    <img src="https://i.ibb.co/SBQwYt7/19.jpg"  class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">20 / 48</div>
+    <img src="https://i.ibb.co/VSbFCGL/20.jpg" class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">21 / 48</div>
+    <img src="https://i.ibb.co/dK0GWgm/21.jpg"  class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">22 / 48</div>
+    <img src="https://i.ibb.co/VtcbjHz/22.jpg" class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">23 / 48</div>
+    <img src="https://i.ibb.co/fqyJTTd/23.jpg" class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">24 / 48</div>
+    <img src="https://i.ibb.co/vVMT7tZ/24.jpg" class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">25 / 48</div>
+    <img src="https://i.ibb.co/HTNsmQm/25.jpg" class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">26 / 48</div>
+    <img src="https://i.ibb.co/3sWTCQS/26.jpg"  class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">27 / 48</div>
+    <img src="https://i.ibb.co/kMHdf5H/27.jpg"  class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">28 / 48</div>
+    <img src="https://i.ibb.co/R7LL8Cg/28.jpg" class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">29 / 48</div>
+    <img src="https://i.ibb.co/SVzqR20/29.jpg" class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">30 / 48</div>
+    <img src="https://i.ibb.co/xJvLjFg/30.jpg" class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">31 / 48</div>
+    <img src="https://i.ibb.co/yd2JkCQ/31.jpg"  class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">32 / 48</div>
+    <img src="https://i.ibb.co/CJny5S9/32.jpg"  class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">33 / 48</div>
+    <img src="https://i.ibb.co/F877cZc/33.jpg"  class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">34 / 48</div>
+    <img src="https://i.ibb.co/KXqv0tQ/34.jpg"  class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">35 / 48</div>
+    <img src="https://i.ibb.co/kKswMGs/35.jpg"  class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">36 / 48</div>
+    <img src="https://i.ibb.co/WHjLBv3/36.jpg"  class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">37 / 48</div>
+    <img src="https://i.ibb.co/rdTmrwK/37.jpg"  class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">38 / 48</div>
+    <img src="https://i.ibb.co/JnHq7VN/38.jpg"  class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">39 / 48</div>
+    <img src="https://i.ibb.co/G98x7ww/39.jpg"  class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">40 / 48</div>
+    <img src="https://i.ibb.co/DkMsSq6/40.jpg"  class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">41 / 48</div>
+    <img src="https://i.ibb.co/zQ1RC8m/41.jpg"  class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">42 / 48</div>
+    <img src="https://i.ibb.co/fDMw3Qq/42.jpg"  class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">43 / 48</div>
+    <img src="https://i.ibb.co/Lh8txnr/43.jpg"  class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">44 / 48</div>
+    <img src="https://i.ibb.co/Qj55T3s/44.jpg"  class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">45 / 48</div>
+    <img src="https://i.ibb.co/HNKNKLM/45.jpg"  class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">46 / 48</div>
+    <img src="https://i.ibb.co/GQZVtXD/46.jpg"  class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">47 / 48</div>
+    <img src="https://i.ibb.co/9cQNX11/47.jpg"  class="marginauto" alt="centered image">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">48 / 48</div>
+    <img src="https://i.ibb.co/pyj6RgC/48.jpg"  class="marginauto" alt="centered image">
+  </div>
+  
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/mJWvbnv/00.jpg" style="width:100%" onclick="currentSlide(1)" alt="Portfolio">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/3RJ2RMv/00-Indice.jpg" style="width:100%" onclick="currentSlide(2)" alt="Indice">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/MBSv7Wz/01.jpg" style="width:100%" onclick="currentSlide(3)" alt="Fotogrammetria close range con Agisoft Metashape">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/yhvnVFS/02.jpg" style="width:100%" onclick="currentSlide(4)" alt="Rifinitura del modello su Blender">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/Qrv3dKq/03.jpg" style="width:100%" onclick="currentSlide(5)" alt="Stampa 3D">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/KG0C9kJ/04.jpg" style="width:100%" onclick="currentSlide(6)" alt="Fotogrammetria close range con Photoscan">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/809bPTB/05.jpg" style="width:100%" onclick="currentSlide(7)" alt="Retopology e UV Mapping su 3D-Coat">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/1mGDd73/06.jpg" style="width:100%" onclick="currentSlide(8)" alt="Confronto del modello HP ed LP su Blender">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/nkBQXR7/07.jpg" style="width:100%" onclick="currentSlide(9)" alt="Fotogrammetria close range con 3DF Zephir">
+    </div>
+    <div class="colonna">
+      <img class="demo cursor" src="https://i.ibb.co/27T8jFb/08.jpg" style="width:100%" onclick="currentSlide(10)" alt="Esportazione del modello su Blender">
+    </div>
+    <div class="colonna">
+      <img class="demo cursor" src="https://i.ibb.co/93gLCMK/09.jpg" style="width:100%" onclick="currentSlide(11)" alt="Fotogrammetria close range con 3DF Zephir">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/pntHRp5/10.jpg" style="width:100%" onclick="currentSlide(12)" alt="Utilizzo del modello in una scena su Blender">
+    </div>
+    </div>
+    <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/xC17Wy6/11.jpg" style="width:100%" onclick="currentSlide(13)" alt="Texturizzazione di un modello 3D con Quixel Mixer">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/NYbz1bR/12.jpg" style="width:100%" onclick="currentSlide(14)" alt="Alcune delle texture generate">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/jRBL1pj/13.jpg" style="width:100%" onclick="currentSlide(15)" alt="Ritexturizzazione di un asset della libreria Megascan su Quixel Mixerr">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/3YWcX71/14.jpg" style="width:100%" onclick="currentSlide(16)" alt="Creazione di un materiale PBR con Quixel Mixer a partire da una foto">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/1sfzBsm/15.jpg" style="width:100%" onclick="currentSlide(17)" alt="Creazione di un materiale PBR a partire da un Alpha su Quixel Mixer">
+    </div>
+    <div class="colonna">
+      <img class="demo cursor" src="https://i.ibb.co/Fx7CpH4/16.jpg" style="width:100%" onclick="currentSlide(18)" alt="Texturing con Substance Painter">
+    </div>
+    <div class="colonna">
+      <img class="demo cursor" src="https://i.ibb.co/LZcKrN4/17.jpg" style="width:100%" onclick="currentSlide(19)" alt="Texturing con Substance Painter">
+    </div>
+    <div class="colonna">
+      <img class="demo cursor" src="https://i.ibb.co/R9Y8fvw/18.jpg" style="width:100%" onclick="currentSlide(20)" alt="Creazione di un set di texture PBR partendo una foto con Materialize">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/SBQwYt7/19.jpg" style="width:100%" onclick="currentSlide(21)" alt="Impostare un materiale PBR su Blender">
+    </div>
+    <div class="colonna">
+      <img class="demo cursor" src="https://i.ibb.co/VSbFCGL/20.jpg" style="width:100%" onclick="currentSlide(22)" alt="Hard Surface Modeling">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/dK0GWgm/21.jpg" style="width:100%" onclick="currentSlide(23)" alt="Modellazione architettonica, texturing, illuminazione e rendering">
+    </div>
+    <div class="colonna">
+      <img class="demo cursor" src="https://i.ibb.co/VtcbjHz/22.jpg" style="width:100%" onclick="currentSlide(24)" alt="Modellazione organica, texturizzazione, illuminazione e rendering">
+    </div>
+    <div class="colonna">
+      <img class="demo cursor" src="https://i.ibb.co/fqyJTTd/23.jpg" style="width:100%" onclick="currentSlide(25)" alt="Modellazione organica, texturizzazione, illuminazione e rendering">
+    </div>
+    <div class="colonna">
+      <img class="demo cursor" src="https://i.ibb.co/vVMT7tZ/24.jpg" style="width:100%" onclick="currentSlide(26)" alt="Hard Surface Modeling, illuminazione volumetrica, rendering e compositing">
+    </div>
+    <div class="colonna">
+      <img class="demo cursor" src="https://i.ibb.co/HTNsmQm/25.jpg" style="width:100%" onclick="currentSlide(27)" alt="Setup dei nodi nel compositor di Blender">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/3sWTCQS/26.jpg" style="width:100%" onclick="currentSlide(28)" alt="Modellazione parametrica non distruttiva">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/kMHdf5H/27.jpg" style="width:100%" onclick="currentSlide(29)" alt="Modellazione parametrica non distruttiva">
+    </div>
+    <div class="colonna">
+      <img class="demo cursor" src="https://i.ibb.co/R7LL8Cg/28.jpg" style="width:100%" onclick="currentSlide(30)" alt="Modellazione low poly">
+    </div>
+    <div class="colonna">
+      <img class="demo cursor" src="https://i.ibb.co/SVzqR20/29.jpg" style="width:100%" onclick="currentSlide(31)" alt="Modellazione low poly">
+    </div>
+    <div class="colonna">
+      <img class="demo cursor" src="https://i.ibb.co/xJvLjFg/30.jpg" style="width:100%" onclick="currentSlide(32)" alt="Modellazione low poly">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/yd2JkCQ/31.jpg" style="width:100%" onclick="currentSlide(33)" alt="Animazione e particellari">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/CJny5S9/32.jpg" style="width:100%" onclick="currentSlide(34)" alt="Animazione, rigging e simulazione della fisica">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/F877cZc/33.jpg" style="width:100%" onclick="currentSlide(35)" alt="Giochi punta e clicca con Fungus">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/KXqv0tQ/34.jpg" style="width:100%" onclick="currentSlide(36)" alt="Giochi punta e clicca con Fungus">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/kKswMGs/35.jpg" style="width:100%" onclick="currentSlide(37)" alt="Giochi top down shooter">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/WHjLBv3/36.jpg" style="width:100%" onclick="currentSlide(38)" alt="Giochi top down shooter">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/rdTmrwK/37.jpg" style="width:100%" onclick="currentSlide(39)" alt="Giochi a scorrimento laterale">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/JnHq7VN/38.jpg" style="width:100%" onclick="currentSlide(40)" alt="Giochi a scorrimento laterale">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/G98x7ww/39.jpg" style="width:100%" onclick="currentSlide(41)" alt="Giochi shooter in prima persona">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/DkMsSq6/40.jpg" style="width:100%" onclick="currentSlide(42)" alt="Giochi shooter in prima persona">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/zQ1RC8m/41.jpg" style="width:100%" onclick="currentSlide(43)" alt="Giochi di volo in terza persona">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/fDMw3Qq/42.jpg" style="width:100%" onclick="currentSlide(44)" alt="Giochi di volo in terza persona">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/Lh8txnr/43.jpg" style="width:100%" onclick="currentSlide(45)" alt="Giochi stealth in terza persona">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/Qj55T3s/44.jpg" style="width:100%" onclick="currentSlide(46)" alt="Giochi stealth in terza persona">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/HNKNKLM/45.jpg" style="width:100%" onclick="currentSlide(47)" alt="Giochi action RPG in terza persona">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/GQZVtXD/46.jpg" style="width:100%" onclick="currentSlide(48)" alt="Giochi action RPG in terza persona">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/9cQNX11/47.jpg" style="width:100%" onclick="currentSlide(49)" alt="Applicativi mobile e Mixed Reality">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/pyj6RgC/48.jpg" style="width:100%" onclick="currentSlide(50)" alt="Applicativi mobile e Mixed Reality">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
+
