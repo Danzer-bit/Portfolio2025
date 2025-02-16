@@ -14,6 +14,13 @@ body {
 
 img {
   vertical-align: middle;
+  height: auto;
+}
+
+/* Reduce size of specific images */
+.mySlides img[src="Gallery/00a.jpg"],
+.mySlides img[src="Gallery/00b.jpg"] {
+  max-width: 70%; /* Reduce these images by 30% */
 }
 
 /* Position the image container (needed to position the left and right arrows) */
@@ -36,7 +43,7 @@ img {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 15%;
+  top: 12%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
@@ -89,14 +96,16 @@ img {
   width: 16.66%;
 }
   
-  .colonna {
+.colonna {
   float: left;
   width: 12.5%;
 }
 
-/* Add a transparency effect for thumnbail images */
+/* Add a transparency effect for thumbnail images */
 .demo {
   opacity: 0.6;
+  height: 200px; /* Set uniform height for thumbnails */
+  object-fit: cover; /* Ensures images maintain aspect ratio while fitting within the height */
 }
 
 .active,
@@ -104,13 +113,13 @@ img {
   opacity: 1;
 }
   
-  h2 {
+h2 {
   color: white;
 }
   
-  .marginauto {
-    margin: 10px auto 20px;
-    display: block;
+.marginauto {
+  margin: 10px auto 20px;
+  display: block;
 }
 </style>
 <body>
@@ -120,17 +129,17 @@ img {
 <div class="container">
   <div class="mySlides">
     <div class="numbertext">Portfolio</div>
-    <img src="Gallery/00a.jpg"  class="marginauto" alt="centered image">
+    <img src="Gallery/00a.jpg" style="width:55%" class="marginauto" alt="centered image">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">Indice</div>
-    <img src="Gallery/00b.jpg"  class="marginauto" alt="centered image">
+    <img src="Gallery/00b.jpg" style="width:55%" class="marginauto" alt="centered image">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">1 / 53</div>
-    <img src="Gallery/01.jpg"  class="marginauto" alt="centered image">
+    <img src="Gallery/01.jpg" class="marginauto" alt="centered image">
   </div>
     
   <div class="mySlides">
@@ -438,8 +447,6 @@ img {
     <div class="column">
       <img class="demo cursor" src="Gallery/10.jpg" style="width:100%" onclick="currentSlide(12)" alt="Texturizzazione di un modello 3D con Quixel Mixer">
     </div>
-    </div>
-    <div class="row">
     <div class="column">
       <img class="demo cursor" src="Gallery/11.jpg" style="width:100%" onclick="currentSlide(13)" alt="Texturizzazione di un modello 3D con Quixel Mixer">
     </div>
@@ -476,8 +483,6 @@ img {
     <div class="colonna">
       <img class="demo cursor" src="Gallery/22.jpg" style="width:100%" onclick="currentSlide(24)" alt="Hard-Surface Modeling, Animazione e Rendering">
     </div>
-    </div>
-    <div class="row">  
     <div class="colonna">
       <img class="demo cursor" src="Gallery/23.jpg" style="width:100%" onclick="currentSlide(25)" alt="Hard-Surface Modeling, Animazione tramite Shape Keys e Rendering">
     </div>
@@ -513,9 +518,7 @@ img {
     </div>
     <div class="column">
       <img class="demo cursor" src="Gallery/34.jpg" style="width:100%" onclick="currentSlide(36)" alt="Hard Surface Modeling, illuminazione volumetrica, rendering e compositing">
-    </div>
-    </div>
-    <div class="row">   
+    </div>  
     <div class="column">
       <img class="demo cursor" src="Gallery/35.jpg" style="width:100%" onclick="currentSlide(37)" alt="Compositing">
     </div>
@@ -551,9 +554,7 @@ img {
     </div>
     <div class="column">
       <img class="demo cursor" src="Gallery/46.jpg" style="width:100%" onclick="currentSlide(48)" alt="Giochi di volo in terza persona">
-    </div>
-    </div>
-    <div class="row">   
+    </div>  
     <div class="column">
       <img class="demo cursor" src="Gallery/47.jpg" style="width:100%" onclick="currentSlide(49)" alt="Giochi di volo in terza persona">
     </div>
@@ -611,4 +612,6 @@ function showSlides(n) {
     
 </body>
 </html>
+
+
 
